@@ -1,0 +1,28 @@
+.texto{
+    width: 15%;
+    float: left;
+    padding: 1%;
+}
+.botones{
+    margin-left: 30%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.nuevoPlayer{
+    background-color: lightsteelblue;
+    margin-right: 42%;
+    margin-left: 42%;
+    border: 1px solid black;
+  }
+  h2{
+      text-align: center;
+  }
+  .input{
+      width: 80%;
+  }
+  .texto{
+      margin-left: 40%;
+  }
+  input{
+      margin-left: 20%;
+  }

@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<header>
+    <nav class="navigationBar">
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/players">Players</a>
+        <app-player-search class="search"></app-player-search>
+    </nav>
+</header>
+<body style="overflow-y:hidden">
+    <router-outlet></router-outlet>
+</body>
+<app-footer></app-footer>

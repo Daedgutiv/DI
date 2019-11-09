@@ -1,0 +1,31 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<div class="nuevoPlayer">
+  <h2>New player details</h2>
+  <table>
+    <tr>
+      <td><label class="texto">Name: </label></td>
+      <td>
+        <input #playerName placeholder="name" class="input" />
+      </td>
+    </tr>
+    <tr>
+      <td><label class="texto">Dorsal:</label></td>
+      <td><input #playerDorsal placeholder="dorsal" class="input" /></td>
+    </tr>
+    <tr>
+      <td><label class="texto">Postion:</label></td>
+      <td>
+        <input type="radio" value="Portero" [(ngModel)]="posicion" (change)="radioCambio(Position.value)"> Portero <br>
+        <input type="radio" value="Defensa" [(ngModel)]="posicion" (change)="radioCambio(Position.value)"> Defensa <br>
+        <input type="radio" value="Medio" [(ngModel)]="posicion" (change)="radioCambio(Position.value)">
+        Medio <br>
+        <input type="radio" value="Delantero" [(ngModel)]="posicion" (change)="radioCambio(Position.value)">
+        Delantero<br>
+      </td>
+    </tr>
+  </table>
+  <div class="botones">
+    <button (click)="create(playerName.value, playerDorsal.value)">Create</button>
+    <button (click)="goBack()">Go back</button>
+  </div>
+</div>
