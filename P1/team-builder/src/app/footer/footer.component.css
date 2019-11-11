@@ -1,21 +1,4 @@
-.info{
-    width: 49%;
-    float: right;
-    text-align: center;
-    padding: 0.5%;
-  }
-  .mensajes{
-    width: 20%;
-    float: left;
-    margin-left: 10%;
-  }
-  footer{
-    position: fixed;
-    bottom: 0;
-    width: 90%;
-    margin-right: 30px;
-    background:lightseagreen;
-  }
+
   p{
     margin-bottom: 0;
     margin-top: 2px;
@@ -23,8 +6,20 @@
   .fa {
     font-size:36px;
   }
+  .divDdiv{
+    width: 100%;
+  }
   footer{
-    padding: 0.5%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 100%;
+    bottom: 0;background-color: darkgray;
+    display: block;
+    margin-bottom: 0;
+  }
+  .mensajes{
+    display: block;
+    width: 30%;
+    margin-left: 20%;
+  }
+  .info{
+    display: block;
   }

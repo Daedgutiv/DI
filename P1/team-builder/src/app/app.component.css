@@ -30,18 +30,15 @@ h1 {
   }
   .navigationBar {
     border-style: solid;
-    background-color: lightseagreen;
+    background-color: #405061;
+    border-radius: 10px;
+    margin-top: 1.5%;
   }
   header,body{
     margin-left: 2%;
     margin-right: 2%;
   }
-  body{
-    padding: 0.5%;
-  }
   .search{
     float: right;
     margin-right: 8em;
-    margin-top: 5px;
-    margin-bottom: 10px;
   }
