@@ -11,6 +11,6 @@ export class AppComponent implements AfterViewInit {
 
   }
   ngAfterViewInit(){
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'grey';
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'darkgrey';
   }
 }
