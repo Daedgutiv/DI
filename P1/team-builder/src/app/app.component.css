@@ -8,26 +8,6 @@ h1 {
     margin-top: 0;
     padding-top: 0;
   }
-  nav a {
-    padding: 5px 10px;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    display: inline-block;
-    background-color: #eee;
-    border-radius: 4px;
-  }
-  nav a:visited, a:link {
-    color: #334953;
-  }
-  nav a:hover {
-    color: #039be5;
-    background-color: #cfd8dc;
-  }
-  nav a.active {
-    color: #039be5;
-  }
   .navigationBar {
     border-style: solid;
     background-color: #405061;
@@ -41,4 +21,32 @@ h1 {
   .search{
     float: right;
     margin-right: 8em;
+    margin-top: 1%;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li{
+    float: left;
+  }
+  li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+  }
+  .b a:hover{
+    background-color: gray;
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+  }
+  .a a:hover{
+    background-color: gray;
+  }
+  .search2{
+    float: right;
   }

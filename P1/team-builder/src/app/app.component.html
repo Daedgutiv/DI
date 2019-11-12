@@ -1,9 +1,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
     <nav class="navigationBar">
-        <a routerLink="/dashboard">Dashboard</a>
-        <a routerLink="/players">Players</a>
-        <app-player-search class="search"></app-player-search>
+        <ul>
+            <li class="b">
+                <a routerLink="/dashboard">Dashboard</a>
+            </li>
+            <li class="a">
+                <a routerLink="/players">Players</a>
+            </li>
+            <li class="search2">
+                <app-player-search class="search"></app-player-search>
+            </li>
+        </ul>
     </nav>
 </header>
     <router-outlet></router-outlet>

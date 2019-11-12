@@ -4,28 +4,28 @@
     <tr>
       <td><label class="texto">Name: </label></td>
       <td>
-        <input #playerName placeholder="{{player.name}}" class="input" />
+        <input #playerName [(ngModel)]="player.name" class="input" />
       </td>
     </tr>
     <tr>
       <td><label class="texto">Dorsal:</label></td>
-      <td><input #playerDorsal placeholder="{{player.dorsal}}" class="input" /></td>
+      <td><input #playerDorsal [(ngModel)]="player.dorsal" class="input"/></td>
     </tr>
     <tr>
       <td><label class="texto">Postion:</label></td>
       <td>
         <input type="radio" value="Portero" checked="true" [(ngModel)]="player.position"
-          (change)="radioCambio(Position.value)"> Portero <br>
-        <input type="radio" value="Defensa" [(ngModel)]="player.position" (change)="radioCambio(Position.value)"> Defensa <br>
-        <input type="radio" value="Medio" [(ngModel)]="player.position" (change)="radioCambio(Position.value)">
+         > Portero <br>
+        <input type="radio" value="Defensa" [(ngModel)]="player.position"> Defensa <br>
+        <input type="radio" value="Medio" [(ngModel)]="player.position" >
         Medio <br>
-        <input type="radio" value="Delantero" [(ngModel)]="player.position" (change)="radioCambio(Position.value)">
+        <input type="radio" value="Delantero" [(ngModel)]="player.position">
         Delantero<br>
       </td>
     </tr>
   </table>
   <div class="botones">
-    <button (click)="create(playerName.value, playerDorsal.value)">Create</button>
+    <button (click)="save(playerDorsal.value)">Save</button>
     <button (click)="goBack()">Go back</button>
   </div>
 </div>

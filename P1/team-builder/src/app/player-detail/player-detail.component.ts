@@ -13,8 +13,6 @@ import { escapeIdentifier } from '@angular/compiler/src/output/abstract_emitter'
 export class PlayerDetailComponent implements OnInit {
   @Input() player: Player;
 
-  opciones = ['Portero', 'Defensa', 'Medio', 'Delantero'];
-  opcion ="";
   posicion="";
 
   radioCambio(position: string){
@@ -36,7 +34,10 @@ export class PlayerDetailComponent implements OnInit {
     this.playerService.getPlayer(id).subscribe(player => this.player = player);
   }
 
-  save(): void {
+  save(pos: number): void {
+    if (isNaN(pos)){
+      return;
+    }
     this.playerService.updatePlayer(this.player)
       .subscribe(() => this.goBack());
   }
