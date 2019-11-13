@@ -13,7 +13,8 @@
     margin: .5em;
     padding: .3em 0;
     height: 1.6em;
-    border-radius: 4px;
+    width: 17em;
+    border-radius: 6px;
   }
   .players li:hover {
     color: #607D8B;
@@ -70,7 +71,7 @@
   
   button.delete {
     position: relative;
-    left: 194px;
+    left: 240px;
     top: -32px;
     background-color: gray !important;
     color: white;
@@ -82,4 +83,10 @@
   }
 .todo{
   margin-left: 40%;
+}
+.prueba{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 38em;
+  width: 132%;
 }

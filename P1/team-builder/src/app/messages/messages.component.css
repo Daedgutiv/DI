@@ -3,7 +3,8 @@ h2 {
     color:black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: 0.2em;
   }
   body, input[text], button {
     color: crimson;
@@ -38,4 +39,8 @@ h2 {
   }
   .mensaje{
     font-size: 0.8em;
+  }
+  .prueba{
+    overflow-y: auto;
+    height: 4em;
   }

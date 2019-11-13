@@ -17,7 +17,8 @@
 </div>
 
 <ul class="players">
-    <li *ngFor="let player of players">
+    <div class="prueba">
+         <li *ngFor="let player of players">
     <!--
     [class.selected]="player === selectedPlayer"
     (click)="onSelect(player)">
@@ -29,6 +30,8 @@
     <button class="delete" title="delete player"
   (click)="delete(player)">x</button>
     </li>
+    </div>
+   
 </ul>
 
 <app-player-detail [player]="selectedPlayer"></app-player-detail>
