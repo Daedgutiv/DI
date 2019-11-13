@@ -4,12 +4,12 @@
     <tr>
       <td><label class="texto">Name: </label></td>
       <td>
-        <input #playerName [(ngModel)]="player.name" class="input" />
+        <input #playerName [(ngModel)]="player.name" class="input" required/>
       </td>
     </tr>
     <tr>
       <td><label class="texto">Dorsal:</label></td>
-      <td><input #playerDorsal [(ngModel)]="player.dorsal" class="input"/></td>
+      <td><input #playerDorsal [(ngModel)]="player.dorsal" class="input" required/></td>
     </tr>
     <tr>
       <td><label class="texto">Postion:</label></td>
@@ -25,7 +25,7 @@
     </tr>
   </table>
   <div class="botones">
-    <button (click)="save(playerDorsal.value)">Save</button>
+    <button (click)="save(playerDorsal.value, playerName.value)">Save</button>
     <button (click)="goBack()">Go back</button>
   </div>
 </div>

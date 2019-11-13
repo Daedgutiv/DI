@@ -34,8 +34,12 @@ export class PlayerDetailComponent implements OnInit {
     this.playerService.getPlayer(id).subscribe(player => this.player = player);
   }
 
-  save(pos: number): void {
+  save(pos: number, name: number): void {
+    if (!name || !pos) { return; }
     if (isNaN(pos)){
+      return;
+    } 
+    if (isNaN(name)==false){
       return;
     }
     this.playerService.updatePlayer(this.player)

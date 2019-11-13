@@ -21,7 +21,7 @@ h1 {
   .search{
     float: right;
     margin-right: 8em;
-    margin-top: 1%;
+    align-content: center;
   }
   ul{
     list-style-type: none;
@@ -49,4 +49,15 @@ h1 {
   }
   .search2{
     float: right;
+  }
+  .router-outlet{
+    display: block;
+    position: relative;
+  }
+  .app-footer{
+    display: block;
+    height: 100%;
+   margin-bottom: 0;
+   bottom: 0;
+    position: relative;
   }

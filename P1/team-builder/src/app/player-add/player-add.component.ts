@@ -32,14 +32,18 @@ export class PlayerAddComponent implements OnInit {
 
   esNum:Boolean;
 
-  create(name: string, dorsal: number): void {
-    name = name.trim();
+  create(name2: number, dorsal: number): void {
     var position =this.posicion;
-    if (!name || !dorsal || !position) { return; }
+    if (!name2 || !dorsal || !position) { return; }
     if (isNaN(dorsal)){
       return;
     }
-    this.playerService.addPlayer({ name, dorsal, position } as Player)
+    if (isNaN(name2)==false){
+      return;
+    }
+    var name: string; 
+    name = name2.toString();
+    this.playerService.addPlayer({name, dorsal, position } as Player)
       .subscribe(player => {
         this.players.push(player);
       });
