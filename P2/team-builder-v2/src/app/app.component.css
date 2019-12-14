@@ -1,0 +1,47 @@
+/* AppComponent's private CSS styles */
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  header,body{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .search{
+    position: relative;
+    margin-left: 50%;
+    align-content: center;
+    margin-top: 0.25%;
+  }
+  .router-outlet{
+    display: block;
+    position: static;
+  }
+  footer{
+  position: absolute;
+  display: block;
+   bottom: 0;
+   width: 100%;
+  }
+  .tab {
+    background-color: royalblue;
+  }
+  .tab a{
+    color: hotpink;
+  }
+  .tab a:hover{
+    background-color: indigo;
+  }
+  nav {
+    margin-top: 1%;
+    position: relative;
+    height: 3em;
+  }
+  body{
+    height: 70%;
+  }

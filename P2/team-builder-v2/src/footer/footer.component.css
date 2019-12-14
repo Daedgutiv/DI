@@ -1,0 +1,26 @@
+
+  p{
+    margin-bottom: 0;
+    margin-top: 2px;
+  }
+  .fa {
+    font-size:36px;
+  }
+  .divDdiv{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+    bottom: 0; 
+    background-color: gray;
+    margin-bottom: 0;
+  }
+  .mensajes{
+    display: block;
+    width: 30%;
+    margin-left: 20%;
+  }
+  .info{
+    text-align: right;
+    margin-right: 2%;
+  }

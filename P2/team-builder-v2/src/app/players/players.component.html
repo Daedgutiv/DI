@@ -1,0 +1,63 @@
+<!--
+    ***Example Details***
+
+<h3>{{player.name | uppercase}} Example Details:</h3>>
+<div><span>Dorsal: </span>{{player.dorsal}}</div>
+<div><span>Position: </span>{{player.position}}</div>
+<div><label>Name:
+    <input [(ngModel)]="player.name" placeholder="name"/>
+</label></div>
+-->
+<div class="todo">
+    <h3>Team Players</h3>
+
+    <div class="newPlayer">
+        <!-- (click) passes input value to add() and then clears the input -->
+        <Button routerLink="/player-add">Create new player</Button>
+    </div>
+
+    <ul class="players">
+        <div class="prueba">
+            <li *ngFor="let player of players">
+                <a routerLink="/detail/{{player.id}}">
+                    <div class="padre">
+                        <img class="image" src="assets/img/camisas-azul-png-3.png">
+                        <div class="texto">{{player.dorsal}}</div>
+                    </div>
+                    <div class="nombre">{{player.name}}</div>
+                </a>
+                <div class="divDelete">
+                    <img class="delete" src="assets/img/0-sfQHN6W9-corbeille-1-s-.png" (click)="delete(player)">
+                </div>
+            </li>
+        </div>
+
+    </ul>
+
+    <app-player-detail [player]="selectedPlayer"></app-player-detail>
+</div>
+<!--
+    ***Now all of this will go to Players-detail component***
+<div *ngIf="selectedPlayer">
+    <h4>{{selectedPlayer.name | uppercase}} Details: </h4>
+    <div>
+        <label>
+            Name:
+            <input [(ngModel)]="selectedPlayer.name" placeholder="Name"/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Dorsal:
+            <input [(ngModel)]="selectedPlayer.dorsal" placeholder="Dorsal"/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Position:
+            <input [(ngModel)]="selectedPlayer.position" placeholder="Position"/>
+        </label>
+    </div>
+</div>
+
+-->

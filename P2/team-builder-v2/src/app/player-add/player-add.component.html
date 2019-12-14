@@ -1,0 +1,38 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<div class="nuevoPlayer">
+  <h2>New player details</h2>
+  <form novalidate [formGroup]="group">
+    <div class="div">
+      <mat-form-field>
+        <input matInput #playerName type="text" formControlName="name" placeholder="Name" class="input">
+      </mat-form-field><label class="error" *ngIf="group.get('name').hasError('required')&&group.get('name').touched">
+        Name Required</label><label class="error"
+        *ngIf="group.get('name').hasError('minlength')&&group.get('name').touched">
+        Name too short</label><label class="error"
+        *ngIf="group.get('name').hasError('maxlength')&&group.get('name').touched">
+        Name too long</label>
+    </div>
+    <div class="div">
+      <mat-form-field>
+        <input matInput #playerDorsal type="number" formControlName="dorsal" placeholder="Dorsal"
+          class="input">
+      </mat-form-field><label class="error"
+      *ngIf="group.get('dorsal').hasError('required')&&group.get('dorsal').touched">
+      Dorsal Required</label><label class="error"
+      *ngIf="group.get('dorsal').hasError('pattern')&&group.get('dorsal').touched">
+      Dorsal too long, 2 digit max.</label>
+    </div>
+    <label class="texto">Position:</label>
+    <mat-radio-group class="radio" [(ngModel)]="selected" [ngModelOptions]="{standalone: true}" >
+      <mat-radio-button *ngFor="let posicion of posiciones" [value]="posicion" class="pos">
+        {{posicion}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </form>
+  <div class="botones">
+    <form novalidate (ngSubmit)="create(playerName.value, playerDorsal.value)" [formGroup]="group">
+      <button type="submit" [disabled]="group.invalid">Save</button>
+    </form>
+    <button (click)="goBack()">Go back</button>
+  </div>
+</div>

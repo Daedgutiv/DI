@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<header>
+    <nav mat-tab-nav-bar class="tab">
+        <a mat-tab-link routerLink="home-component">Home</a>
+        <a mat-tab-link routerLink="dashboard">Dashboard</a>
+        <a mat-tab-link routerLink="players">Players</a>
+        <app-player-search *ngIf="staticOcultar" class="search"></app-player-search>
+    </nav>
+</header>
+<body>
+    <div class="router-outlet">
+        <router-outlet></router-outlet>
+    </div>
+</body>
+<footer>
+    <app-footer></app-footer>
+</footer>

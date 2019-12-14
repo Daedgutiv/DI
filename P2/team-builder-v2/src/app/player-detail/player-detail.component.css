@@ -1,0 +1,63 @@
+.texto{
+    width: 15%;
+    float: left;
+    padding: 1%;
+}
+.botones{
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex; flex-direction: row;
+}
+.nuevoPlayer{
+    background-color: lightsteelblue;
+    margin-right: 35%;
+    margin-left: 35%;
+    border: 1px solid black;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  h2{
+      text-align: center;
+  }
+  input{
+      text-align: center;
+      margin-left: 10%;
+  }
+  .input{
+      width: 80%;
+  }
+  .div{
+      margin-left: 30%;
+  }
+  .texto{
+      margin-left: 30%;
+      margin-top: 6%;
+  }
+  .radio{
+      display: flex; flex-direction: column;
+  }
+  .pos{
+      margin-bottom: 1%;
+  }
+  .error{
+      margin-left: 2%;
+      color: red;
+  }
+  input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+ 
+
+input[type=number] {
+
+    -moz-appearance:textfield;
+
+}
