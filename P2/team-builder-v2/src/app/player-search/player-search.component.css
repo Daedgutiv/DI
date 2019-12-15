@@ -38,7 +38,11 @@
   #search-box{
     text-align: left;
     margin-top: 0.5em;
+    
+    z-index: 100
   }
   .search-result{
-    position: initial;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
   }

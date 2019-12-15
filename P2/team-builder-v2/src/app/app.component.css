@@ -8,9 +8,10 @@ h1 {
     margin-top: 0;
     padding-top: 0;
   }
-  header,body{
+  header{
     margin-left: 2%;
     margin-right: 2%;
+    position: relative;
   }
   .search{
     position: relative;
@@ -19,8 +20,10 @@ h1 {
     margin-top: 0.25%;
   }
   .router-outlet{
+    margin-top: 2%;
     display: block;
     position: static;
+    margin-bottom: 5%;
   }
   footer{
   position: absolute;
@@ -29,13 +32,13 @@ h1 {
    width: 100%;
   }
   .tab {
-    background-color: royalblue;
+    background-color:  #33B8FF;
   }
   .tab a{
-    color: hotpink;
+    color: black;
   }
   .tab a:hover{
-    background-color: indigo;
+    background-color: #3352FF;
   }
   nav {
     margin-top: 1%;
@@ -43,5 +46,13 @@ h1 {
     height: 3em;
   }
   body{
-    height: 70%;
+    height: 60%;
+    position: relative;
+  }
+  app-footer{
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0%;
+    display: block;
+    position: static;
   }

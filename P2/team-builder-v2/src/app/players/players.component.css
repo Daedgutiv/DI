@@ -9,7 +9,7 @@
     cursor: pointer;
     position: relative;
     left: 0;
-    background-color: hotpink;
+    background-color: #FF33B8;
     margin: .5em;
     padding: .3em 0;
     height: 3em;
@@ -68,10 +68,6 @@
   button:hover {
     background-color: #cfd8dc;
   }
-  
-  button.delete {
-   
-  }
   .newPlayer{
     margin: .5em;
     padding: .3em 0;
@@ -115,4 +111,7 @@
   height: 60%;
   top: 20%;
   right: 5%;
+}
+h3{
+  color: #FF3352;
 }

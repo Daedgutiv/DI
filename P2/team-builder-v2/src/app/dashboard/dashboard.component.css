@@ -18,6 +18,7 @@
   h3 {
     text-align: center;
     margin-bottom: 0;
+    color: #FF3352;
   }
   h4 {
     position: relative;
@@ -48,9 +49,9 @@
     text-align: center;
   }
   .module:hover {
-    background-color: hotpink;
+    background-color: #FF33B8;
     cursor: pointer;
-    color: hotpink;
+    color: #FF33B8;
   }
   .grid-pad {
     padding: 10px 0;
