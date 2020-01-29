@@ -1,0 +1,80 @@
+.decoracion{
+    width: 100%;
+    height: 50%;
+}
+.socios, .redes, .about{
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 4%;
+    text-align: justify;
+}
+.socios h1, .redes h1, .about h1{
+    text-align: center;
+    font-family: woodland;
+    color: #5c330a;
+}
+.about, .socios{
+    column-count: 2;
+}
+
+.about img{
+    width: 70%;
+    margin-left: 15%;
+}
+.socios img{
+    width: 55%;
+    margin-top: 4%;
+    margin-left: 20%;
+}
+.facebook{
+    width: 10%;
+    margin-left: 31%;
+}
+.twitter{
+    width: 15%;
+}
+.instagram{
+    width: 10%;
+}
+
+@media (max-width: 415px){
+    .about, .socios{
+        column-count: 1;
+    }
+    .about img {
+        margin-top: 5%;
+    }
+    .socios img{
+        display: none;
+    }
+    .socios, .redes, .about{
+        text-align: justify;
+        font-size: 15px;
+    }
+    .socios h1, .redes h1, .about h1{
+        font-size: 30px;
+    }
+    .facebook{
+        width: 19%;
+        margin-left: 17%;
+    }
+    .twitter{
+        width: 29%;
+    }
+    .instagram{
+        width: 19%;
+    }
+}
+@media (max-width: 1150px){
+    .about img {
+        margin-top: 25%;
+        margin-bottom: 8%;
+        width: 80%;
+    }
+    .socios img {
+        width: 70%;
+        margin-top: 30%;
+        margin-bottom: 20%;
+        margin-left: 15%;
+    }
+}
