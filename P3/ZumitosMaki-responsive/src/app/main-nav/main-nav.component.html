@@ -5,14 +5,27 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLink="home">Home</a>
+      <a mat-list-item href="#">Who we are?</a>
+      <a mat-list-item href="#">Where we are?</a>
+      <a mat-list-item href="#">Catalog</a>
+      <a mat-list-item href="#">Contact</a>
+      
     </mat-nav-list>
   </mat-sidenav>
+ 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
+    <mat-toolbar class="toolbar" color="primary">
+      <div class="toolbargrande">
+        <a class="atag" mat-tab-link routerLink="home">Home</a>
+        <a class="atag" mat-tab-link routerLink="">Who we are?</a>
+        <a class="atag" mat-tab-link routerLink="">Where we are?</a>
+        <a class="atag" mat-tab-link routerLink="">Catalog</a>
+        <a class="atag" mat-tab-link routerLink="">Contact us</a>
+
+      </div>
+  <button
+      class="boton"
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
@@ -20,8 +33,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>ZumitosMaki-responsive</span>
+      <span class="zumitos">ZumitosMaki-responsive</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <router-outlet class="router-outlet"></router-outlet>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
