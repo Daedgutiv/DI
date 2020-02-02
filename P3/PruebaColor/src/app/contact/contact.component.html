@@ -1,0 +1,98 @@
+<img class="contact" src="assets/img/contact.jpg">
+<div>
+    <span>Zero Bar ofrece la posibilidad de contactar con personal del bar para preguntar
+        por los horarios y disponibilidad en la participación de los eventos, así como
+        cualquier otra duda o cuestión que se desee. La disponibilidad del contacto será
+        la misma que la de apertura del local.
+    </span>
+    <p><strong>Email</strong>
+        : zeroBarVigo@gmail.com
+    </p>
+    <p><strong>Teléfono</strong>
+        : 986355051
+    </p>
+    <p><strong>Fax</strong>
+        : 1-850-210-6911
+    </p>
+    <p><strong>Local</strong>
+        : Rúa do Areal, 12, 36201 Vigo, Pontevedra (<a routerLink="where">Ver en el mapa</a>)
+    </p>
+</div>
+<div>
+    <h1>Déjanos un comentario con tu pregunta</h1>
+    <ul>
+        <li>
+            Respuesta en menos de 24h.
+        </li>
+        <li>
+            No se puede incribir mediante correo electrónico, solo mediante llamada telefónica o presencial en el local.
+        </li>
+        <li>
+            Se admiten curriculums en caso de querer un puesto de trabajo en el establecimiento.
+        </li>
+    </ul>
+</div>
+<div class="NuevoComentario">
+    <form novalidate [formGroup]="form">
+        <div class="Nombre">
+            <mat-form-field>
+                <input matInput #nombre type="text" formControlName="Nombre" placeholder="Nombre" class="input">
+            </mat-form-field>
+            <label class="error" *ngIf="form.get('Nombre').hasError('required')&&form.get('Nombre').touched">
+                Nombre Obligatorio
+            </label>
+            <label class="error" *ngIf="form.get('Nombre').hasError('minlength')&&form.get('Nombre').touched">
+                Nombre demasiado corto
+            </label>
+            <label class="error" *ngIf="form.get('Nombre').hasError('maxlength')&&form.get('Nombre').touched">
+                Nombre demasiado largo
+            </label>
+        </div>
+        <div class="apellidos">
+            <mat-form-field>
+                <input matInput #apellidos type="text" formControlName="Apellidos" placeholder="Apellidos"
+                    class="input">
+            </mat-form-field>
+            <label class="error" *ngIf="form.get('Apellidos').hasError('required')&&form.get('Apellidos').touched">
+                Al menos un Apellido es obligatorio
+            </label>
+            <label class="error" *ngIf="form.get('Apellidos').hasError('minlength')&&form.get('Apellidos').touched">
+                Apellido muy corto
+            </label>
+            <label class="error" *ngIf="form.get('Apellidos').hasError('maxlength')&&form.get('Apellidos').touched">
+                Apellidos demasiado largos
+            </label>
+        </div>
+        <div class="email">
+            <mat-form-field>
+                <input matInput #email type="email" formControlName="Email" placeholder="Email" class="input">
+            </mat-form-field>
+            <label class="error" *ngIf="form.get('Email').hasError('required')&&form.get('Email').touched">
+                El Email es Obligatorio
+            </label>
+            <label class="error" *ngIf="form.get('Email').hasError('pattern')&&form.get('Email').touched">
+                El Email no tiene un formato válido
+            </label>
+        </div>
+        <div class="telefono">
+            <mat-form-field>
+                <input matInput #telefono type="text" formControlName="Telefono" placeholder="Telefono" class="input">
+            </mat-form-field>
+            <label class="error" *ngIf="form.get('Telefono').hasError('minlength')&&form.get('Telefono').touched">
+                El Telefono es demasiado corto
+            </label>
+            <label class="error" *ngIf="form.get('Telefono').hasError('maxlength')&&form.get('Telefono').touched">
+                El Telefono es demasiado largo
+            </label>
+            <label class="error" *ngIf="form.get('Telefono').hasError('pattern')&&form.get('Telefono').touched">
+                El Telefono contiene carácteres No Válidos
+            </label>
+        </div>
+        <div class="mensaje">
+            <mat-form-field>
+                <textarea matInput #mensaje placeholder="Escriba aquí su mensaje" class="textarea">
+                </textarea>
+            </mat-form-field>
+        </div>
+    </form>
+</div>

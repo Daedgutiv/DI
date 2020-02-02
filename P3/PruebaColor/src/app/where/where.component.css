@@ -1,0 +1,31 @@
+.lugar{
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: justify;
+    font-size: 20px;
+}
+.lugar h1{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.map{
+    margin-top: 10%;
+    margin-left: 30%;
+}
+.recreativas{
+    width: 100%;
+}
+@media (max-width: 415px) {
+    .mapa{
+        width: 300px;
+        height: 225px;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 1150px){
+.map{
+    margin-left: 10%;
+}
+}
