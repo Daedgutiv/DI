@@ -1,3 +1,64 @@
-.contact{
+.contact {
     width: 100%;
+}
+
+.info {
+    padding: 5%;
+    text-align: justify;
+}
+
+.info span,
+.infodetallada p {
+    font-size: 20px;
+}
+
+.infodetallada {
+    margin-top: 1%;
+}
+
+.puntos {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.puntos li {
+    font-size: 20px;
+}
+
+.puntos ul {
+    margin-top: 2%;
+}
+
+.puntos h1 {
+    font-size: 50px;
+}
+
+.NuevoComentario {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.NuevoComentario mat-form-field {
+    width: 15%;
+}
+
+.error {
+    color: red;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+@media (max-width: 415px) {
+    .puntos h1 {
+        text-align: center;
+    }
+    .puntos {
+        text-align: justify;
+        margin-right: 10%;
+    }
+    .NuevoComentario mat-form-field {
+        width: 70%;
+    }
 }

@@ -1,25 +1,28 @@
 <img class="contact" src="assets/img/contact.jpg">
-<div>
+<div class="info">
     <span>Zero Bar ofrece la posibilidad de contactar con personal del bar para preguntar
         por los horarios y disponibilidad en la participación de los eventos, así como
         cualquier otra duda o cuestión que se desee. La disponibilidad del contacto será
         la misma que la de apertura del local.
     </span>
-    <p><strong>Email</strong>
-        : zeroBarVigo@gmail.com
-    </p>
-    <p><strong>Teléfono</strong>
-        : 986355051
-    </p>
-    <p><strong>Fax</strong>
-        : 1-850-210-6911
-    </p>
-    <p><strong>Local</strong>
-        : Rúa do Areal, 12, 36201 Vigo, Pontevedra (<a routerLink="where">Ver en el mapa</a>)
-    </p>
+    <div class="infodetallada">
+        <p class="a"><strong>Email</strong>
+            : zeroBarVigo@gmail.com
+        </p>
+        <p><strong>Teléfono</strong>
+            : 986355051
+        </p>
+        <p><strong>Fax</strong>
+            : 1-850-210-6911
+        </p>
+        <p><strong>Local</strong>
+            : Rúa do Areal, 12, 36201 Vigo, Pontevedra (<a routerLink="where">Ver en el mapa</a>)
+        </p>
+    </div>
+
 </div>
-<div>
-    <h1>Déjanos un comentario con tu pregunta</h1>
+<div class="puntos">
+    <h1>Déjanos tu comentario</h1>
     <ul>
         <li>
             Respuesta en menos de 24h.
@@ -90,9 +93,20 @@
         </div>
         <div class="mensaje">
             <mat-form-field>
-                <textarea matInput #mensaje placeholder="Escriba aquí su mensaje" class="textarea">
+                <textarea matInput #mensaje formControlName="Comentario" placeholder="Escriba aquí su comentario"
+                    class="textarea">
                 </textarea>
             </mat-form-field>
+            <label class="error" *ngIf="form.get('Comentario').hasError('required')&&form.get('Comentario').touched">
+                El comentario es obligatorio
+            </label>
         </div>
     </form>
+    <div class="botones">
+        <form novalidate (ngSubmit)="enviar(nombre.value, apellidos.value, email.value, telefono.value, mensaje.value)"
+            [formGroup]="form">
+            <button type="submit" [disabled]="form.invalid">Enviar</button>
+        </form>
+    </div>
+
 </div>
