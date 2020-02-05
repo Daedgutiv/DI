@@ -1,1 +1,24 @@
+<h1 class="titulo">Noticias</h1>
+<div class="noticias">
+    <table>
+        <tr class="for" *ngFor="let noticia of noticias">
+            <td>
+                <a routerLink="">
+                    <div class="noticia">
+                        <h5>{{noticia.titulo}}</h5>
+                        <div class="a">
+                            <img src={{noticia.imagen}}>
+                        </div>
+                        <div class="b">
+                            <span>{{noticia.resumen}}</span>
+                        </div>
+                    </div>
+                </a>
+            </td>
 
+        </tr>
+    </table>
+</div>
+<div class="boton">
+    <button (click)="cargarMas()">Cargar más</button>
+</div>
