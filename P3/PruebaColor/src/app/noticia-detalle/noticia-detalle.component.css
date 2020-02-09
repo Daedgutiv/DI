@@ -1,0 +1,95 @@
+h1 {
+    text-align: center;
+    margin: 2%;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+p {
+    text-align: justify;
+    padding: 5%;
+}
+
+.comentario {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+.tabla1 {
+    margin-left: 25%;
+}
+
+mat-form-field {
+    width: 300%;
+}
+
+h4 {
+    margin-left: 5%;
+    margin-top: 5%;
+    border-bottom: 2px black solid;
+    margin-right: 5%;
+    line-height: 200%;
+}
+
+.comentario h2 {
+    margin-bottom: 2%;
+}
+
+.comentarios {
+    text-align: left;
+    border-bottom: 1px black solid;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+.tabla2 {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tabla2 p {
+    padding: 0;
+}
+
+@media (max-width: 1150px) {
+    .tabla1 {
+        margin-left: 2%;
+    }
+    mat-form-field {
+        width: 250%;
+    }
+}
+
+@media (max-width: 415px) {
+    .tabla1 {
+        margin-left: 0;
+    }
+    .tabla1 img {
+        width: 70%;
+    }
+    .tabla1 td {
+        width: 5%;
+    }
+    mat-form-field {
+        width: 75%;
+    }
+    .tabla2 {
+        margin-left: 1%;
+        margin-right: 2%;
+    }
+    .tabla2 img {
+        width: 80px;
+        padding-right: 15%;
+    }
+    .tabla2 h5 {
+        font-size: 100%;
+    }
+}

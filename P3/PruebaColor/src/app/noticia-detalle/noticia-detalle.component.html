@@ -1,0 +1,45 @@
+<h1>{{noticia.titulo}}</h1>
+<div>
+    <img src="{{noticia.imagen}}">
+</div>
+<p>{{noticia.noticia}}</p>
+
+<div class="comentario">
+    <h2>Deja tu comentario</h2>
+    <table class="tabla1">
+        <td>
+            <img src="assets/img/usuario.png">
+        </td>
+        <td>
+            <form novalidate [formGroup]="form">
+                <div class="nombre">
+                    <mat-form-field>
+                        <input matInput #nombre type="text" formControlName="nombre" placeholder="Nombre o email*" class="input">
+                    </mat-form-field>
+                </div>
+                <div class="comentarioInput">
+                    <mat-form-field>
+                        <textarea matInput #comentario type="text" formControlName="comentario" placeholder="Comentario*" class="input">
+                </textarea> </mat-form-field>
+                </div>
+            </form>
+            <div class="boton">
+                <form novalidate (ngSubmit)="enviar(nombre.value, comentario.value)" [formGroup]="form">
+                    <button mat-raised-button type="submit" [disabled]="form.invalid">Comentar</button>
+                </form>
+            </div>
+        </td>
+    </table>
+
+</div>
+<h4>Comentarios ({{cantidad}})</h4>
+<div class="comentarios" *ngFor="let comentario of comentarios">
+    <table class="tabla2">
+        <td><img src="assets/img/usuario.png"></td>
+        <td>
+            <h5>{{comentario.nombre}} {{comentario.fecha | date:'dd-MM-yyyy hh:mm a'}}</h5>
+            <p>{{comentario.comentario}}</p>
+        </td>
+    </table>
+
+</div>

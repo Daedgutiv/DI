@@ -1,0 +1,59 @@
+.map,
+.email,
+.telefono {
+    width: 40%;
+}
+
+mat-grid-tile {
+    text-align: center;
+}
+
+.facebook,
+.twitter,
+.instagram {
+    width: 20%;
+}
+
+mat-grid-list {
+    background-color: #0c6af2;
+}
+
+.x {
+    width: 5%;
+}
+
+span,
+p {
+    font-size: 70%;
+}
+
+@media (max-width: 415px) {
+    .facebook,
+    .twitter,
+    .instagram {
+        width: 30%;
+    }
+    span,
+    p {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    span {
+        font-size: 60%;
+    }
+    .s {
+        display: none;
+    }
+    .facebook,
+    .twitter,
+    .instagram {
+        width: 33%;
+    }
+    p {
+        line-height: 1em;
+        font-size: 60%;
+        margin-bottom: 0;
+    }
+}
