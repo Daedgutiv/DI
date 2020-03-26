@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">WaterTraining</string>
+    <string name="nombre">Nombre del entrenamiento</string>
+    <string name="horas">Horas</string>
+    <string name="min">Minutos</string>
+    <string name="segundos">Segundos</string>
+    <string name="duracion">Duración del entrenamiento</string>
+    <string name="distancia">Distancia</string>
+    <string name="kil_metros">Kilómetros</string>
+    <string name="metros">Metros</string>
+    <string name="fecha_del_entrenamiento">Fecha del entrenamiento</string>
+    <string name="tipo_de_entrenamiento">Tipo de entrenamiento</string>
+    <string name="piscina_peque_a">Piscina Pequeña</string>
+    <string name="piscina_mediana">Piscina Mediana</string>
+    <string name="piscina_grande">Piscina Grande</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="a_adir">Añadir</string>
+    <string name="seleccionar_fecha">Seleccionar Fecha</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="duracioncard">Duración:</string>
+    <string name="distanciaCard">Distancia:</string>
+    <string name="modificar">modificar</string>
+    <string name="edad">Edad:</string>
+    <string name="entrenamientos_totales">Entrenamientos totales:</string>
+    <string name="entrenamientos">Entrenamientos:</string>
+    <string name="distancia_total">Distancia total:</string>
+    <string name="tiempo_total">Tiempo Total:</string>
+    <string name="velocidad_media">Velocidad Media:</string>
+    <string name="nombre_del_nadador">Nombre del nadador</string>
+    <string name="nacionalidad_del_nadador">Nacionalidad del nadador</string>
+    <string name="edad_del_nadador">Edad del nadador</string>
+    <string name="cambiar_nadador">Cambiar nadador</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="estad_sticas">Estadísticas</string>
+    <string name="configuraci_n">Configuración</string>
+    <string-array name="languages" >
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+    </string-array>
+</resources>

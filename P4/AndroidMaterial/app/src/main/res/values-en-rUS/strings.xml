@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WaterTraining</string>
+    <string name="a_adir">Add</string>
+    <string name="cambiar_nadador">Switch swimmer</string>
+    <string name="cancelar">Cancel</string>
+    <string name="distancia">Distance</string>
+    <string name="distanciaCard">Distance:</string>
+    <string name="distancia_total">Total distance</string>
+    <string name="duracion">Training duration</string>
+    <string name="duracioncard">Duracion:</string>
+    <string name="edad">Age:</string>
+    <string name="edad_del_nadador">Swimmer Age:</string>
+    <string name="eliminar">Delete</string>
+    <string name="entrenamientos">Trainings:</string>
+    <string name="entrenamientos_totales">Total trainings:</string>
+    <string name="fecha_del_entrenamiento">Training date:</string>
+    <string name="horas">Hours</string>
+    <string name="kil_metros">Kilometres</string>
+    <string name="metros">Metres</string>
+    <string name="min">Minutes</string>
+    <string name="modificar">change</string>
+    <string name="nacionalidad_del_nadador">Swimmer Nacionality</string>
+    <string name="nombre">Training name</string>
+    <string name="nombre_del_nadador">Swimmer name</string>
+    <string name="piscina_grande">Big pool</string>
+    <string name="piscina_mediana">Medium pool</string>
+    <string name="piscina_peque_a">Little pool</string>
+    <string name="segundos">Seconds</string>
+    <string name="seleccionar_fecha">Select Date</string>
+    <string name="tiempo_total">Total time:</string>
+    <string name="tipo_de_entrenamiento">Training type</string>
+    <string name="velocidad_media">Average speed:</string>
+    <string name="spanish">Spanish</string>
+    <string-array name="languages" >
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+    </string-array>
+    <string name="english">English</string>
+    <string name="configuraci_n">Configuration</string>
+    <string name="estad_sticas">Statistics</string>
+</resources>
